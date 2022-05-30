@@ -29,3 +29,8 @@ def listar():
     print("--Mostrar contenido de un archivo--")
     archivo = input("Archivo: ")
     print(gestion_archivos.leer_archivo(archivo)+"\n")
+
+def eliminar():
+    print("--Eliminar Archivo--")
+    archivo = input("Archivo: ")
+    gestion_archivos.eliminar_archivo(archivo)
