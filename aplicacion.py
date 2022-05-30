@@ -19,3 +19,8 @@ def crear():
     contenido = input("Contenido: ")
     gestion_archivos.crear_archivo(archivo, contenido)
     
+def agregar():
+    print("--Agregar datos a un archivo--")
+    archivo = input("Archivo: ")
+    contenido = input("Contenido: ")
+    gestion_archivos.agregar_contenido_archivo(archivo, contenido)
