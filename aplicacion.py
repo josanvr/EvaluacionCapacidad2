@@ -34,3 +34,26 @@ def eliminar():
     print("--Eliminar Archivo--")
     archivo = input("Archivo: ")
     gestion_archivos.eliminar_archivo(archivo)
+
+def salir():
+    print("Gracias por su visita...\n")
+    
+def error():
+    print("Opcion incorrecta\n")
+    
+opcion = 1
+while opcion!= 5:
+    menu()
+    opcion= int(input("opcion: "))
+    if opcion == 1:
+        crear()
+    elif opcion == 2:
+        agregar()
+    elif opcion == 3:
+        listar()
+    elif opcion == 4:
+        eliminar()
+    elif opcion == 5:
+        salir()
+    else:
+        error()
